@@ -1,0 +1,51 @@
+header {
+    background: url('../img/Group4.svg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1, header h2 {
+    font-family: 'Montserrat', sans-serif; /* similar to SharpSansNo1-Bold */
+    font-weight: bold;
+    color: #02363D;
+    font-size: 2.5rem; /* 40px */
+    line-height: 3.25px; /* 52px */
+}
+
+header h2 {
+    font-style: italic;
+}
+
+header p {
+    text-transform: uppercase;
+}
+
+header > p {
+    color: #00373E ;
+    font-weight: 600;
+    font-size: 1.3125rem; /* 21px */
+    line-height: 2.5rem; 
+    margin-bottom: 2.75rem; /* 44px */
+}
+
+.tag {
+    background: #C05100;
+    border-radius: 3px;
+    width: 5.5rem; /* 88px */
+    height: 1.75rem; /* 28px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.625rem; /* 26px */
+    margin-top: 5rem; /* 80px */
+}
+
+.tag p {
+    font-weight: bold;
+    font-size: .8125rem;  /* 13px */
+    color: #FFFFFF;
+    letter-spacing: 0.93px;
+    text-align: center;
+    line-height: 15px;
+}
