@@ -1,17 +1,19 @@
 Vue.component('card', {
-    props: ['name', 'title', 'img'],
+    props: ['name', 'title', 'img', 'lang'],
     template: `
-    <div>
+    <div class="card">
 
         <figure>
             <img 
                 :src="'img/speakers/img-' + img + '.png'" 
                 :alt="'Fotografía de ' + name "
-            >
+            />
         </figure>
 
-        <h3> {{ name }} </h3>
-        <p> {{ title }} </p>
+        <div>
+            <h3> {{ name }} </h3>
+            <p :lang="lang"> {{ title }} </p>
+        </div>
 
     </div>
    `,
