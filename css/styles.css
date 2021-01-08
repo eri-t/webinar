@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif; /* free font similar to ProximaNovaRegular*/
+}
+
 header {
     background: url('../img/Group4.svg');
     background-size: cover;
@@ -9,7 +14,7 @@ header {
 }
 
 h1, header h2 {
-    font-family: 'Montserrat', sans-serif; /* similar to SharpSansNo1-Bold */
+    font-family: 'Montserrat', sans-serif; /* free font similar to SharpSansNo1-Bold */
     font-weight: bold;
     color: #02363D;
     font-size: 2.5rem; /* 40px */
@@ -70,10 +75,88 @@ header > p {
 #all > div {
     display: flex;
     flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 5.125rem; /* 82px */
 }
 
-@media (min-width: 992px) { 
+main p {
+    color: #405457;
+/*    letter-spacing: 0; */
+    line-height: 1.75rem; /* 28px */
+    margin-top: 1.9375rem; /* 31px */
+}
+
+form {
+    padding: 2.375rem 3rem 4.75rem 3rem; /* 38px 48px 76px 48px */
+    background: #F8F9F9;
+    margin: auto;
+    width: 28.9375rem; /* 463px */
+}
+
+form h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem; /* 20px */
+    color: #02363D;
+    text-align: center;
+    line-height: 1.8125rem; /* 29px */
+}
+
+input, label {
+    display: block;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: .875rem; /* 14px */
+    color: #02363D;
+    margin-top: 1.5rem; /* 24px */
+}
+
+input, select {
+    height: 3.125rem; /* 50px */
+    width: 100%; /*23rem; /* 368px */
+}
+
+select {
+    color: #68737D;
+    padding-left: 1.03125rem; /* 16.5px */
+    padding-right: 1.03125rem;
+/*    font-size: 1rem; */
+}
+
+input:not([type="submit"]), select {
+    border: 1px solid #68737D;
+}
+
+input[type="submit"] {
+    margin-top: 2.1875rem; /* 35px */
+    font-size: 1.1875rem; /* 19px */
+    color: #FFFFFF;
+    background: #02363D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+@media (min-width: 1200px) { 
     #all > div {
         flex-direction: row;
+        max-width: 1129px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main {
+        width: calc(100% - 23px);
+    }
+
+    aside {
+        padding-left: 4.5625rem; /* 73px */
+    }
+
+    form {
+        margin: auto;
     }
 }
