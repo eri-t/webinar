@@ -16,6 +16,7 @@
     <script src="js/vue.js"></script>
     <script src="js/components/banner.js"></script>
     <script src="js/components/logos.js"></script>
+    <script src="js/components/card.js"></script>
     <script src="js/components/form-component.js"></script>
 </head>
 
@@ -35,6 +36,12 @@
                         mientras se convertía en el gran Unicornio de LATAM.</p>
 
                     <p>Escucha de primera mano la voz de nuestros especialistas:</p>
+
+                    <ul>
+                        <li v-for="speaker in speakers">
+                            <card :name='speaker.name' :title="speaker.jobPosition" :img="speaker.img"></card>
+                        </li>
+                    </ul>
 
                     <p>Participa e inspírate para innovar y mejorar la interacción entre clientes y marcas con historias
                         de éxito de empresas

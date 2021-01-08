@@ -80,6 +80,11 @@ header > p {
     margin-top: 5.125rem; /* 82px */
 }
 
+#all > div > div {
+    max-width: 37.0625rem; /* 593px */
+    margin: auto;
+}
+
 main p {
     color: #405457;
 /*    letter-spacing: 0; */
@@ -87,11 +92,16 @@ main p {
     margin-top: 1.9375rem; /* 31px */
 }
 
+#all > .logos {
+max-width: 37.0625rem; /* 593px */;
+}
+
 form {
     padding: 2.375rem 3rem 4.75rem 3rem; /* 38px 48px 76px 48px */
     background: #F8F9F9;
-    margin: auto;
-    width: 28.9375rem; /* 463px */
+    width: 100%;
+        margin: auto;
+    max-width: 28.9375rem; /* 463px */
 }
 
 form h2 {
@@ -140,12 +150,19 @@ input[type="submit"] {
     font-weight: 600;
 }
 
+@media (min-width: 576px) { 
+
+}
+
 @media (min-width: 1200px) { 
     #all > div {
         flex-direction: row;
         max-width: 1129px;
         margin-left: auto;
         margin-right: auto;
+    }
+    #all > div > div {
+        margin: 0;
     }
 
     main {
