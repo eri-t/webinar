@@ -4,34 +4,40 @@ Vue.component('logos', {
             companies: [
                 {
                     title: 'Cluster Financiero',
-                    img: 'Bitmap.png'
+                    img: 'Bitmap.png',
+                    width: '89'
                 },
                 {
                     title: 'Asobanca',
-                    img: 'asobanca.png'
+                    img: 'asobanca.png',
+                    width: '83'
                 },
                 {
                     title: 'IPBF',
-                    img: 'Captura de Pantalla 2020-12-09 a la(s) 01.25.30 p. m..jpg'
+                    img: 'CapturadePantalla20201209-012530pm.jpg',
+                    width: '69'
                 },
                 {
                     title: 'HighTelecom',
-                    img: 'logo_hightelecom_horizontal.png'
+                    img: 'logo_hightelecom_horizontal.png',
+                    width: '137'
                 },
                 {
                     title: 'Ebanx',
-                    img: 'ebanx2_1.png'
+                    img: 'ebanx2_1.png',
+                    width: '69'
                 },
                 {
                     title: 'Zendesk',
-                    img: 'logo-h.jpg'
+                    img: 'logo-h.jpg',
+                    width: '78'
                 },
             ]
         }
     },
     template: `
 <ul class="logos">
-  <li v-for="item in companies" v-bind:style="{ backgroundImage: 'url(img/companies/' + item.img + ')' }">
+  <li v-for="item in companies" :style="{ backgroundImage: 'url(img/companies/' + item.img + ')', width:item.width + 'px' }">
     {{ item.title }}
   </li>
 </ul>

@@ -1,5 +1,5 @@
 header {
-    background: url('../img/Group 4.svg');
+    background: url('../img/Group4.svg');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -64,6 +64,16 @@ header > p {
     background-position: center bottom;
     object-fit: cover;
     color: transparent;
-    min-width: 4.3125rem; /* 69px */
     height: 2.625rem; /* 42px */
+}
+
+#all > div {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 992px) { 
+    #all > div {
+        flex-direction: row;
+    }
 }
