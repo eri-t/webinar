@@ -26,6 +26,33 @@ var app = new Vue({
 				img: 'astudillo',
 				lang: 'es'
 			},
+		],
+		social: [
+			{
+				name: 'twitter',
+				n: 0
+			},
+			{
+				name: 'facebook',
+				n: 1
+			},
+			{
+				name: 'linkedin',
+				n: 2
+			},
+			{
+				name: 'youtube',
+				n: 3
+			},
+			{
+				name: 'instagram',
+				n: 4
+			},
+			{
+				name: 'nombre',
+				n: 5
+			},
+
 		]
 	},
 })

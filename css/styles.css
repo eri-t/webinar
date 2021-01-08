@@ -70,6 +70,7 @@ header > p {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .logos li {
@@ -78,18 +79,37 @@ header > p {
     object-fit: cover;
     color: transparent;
     height: 2.625rem; /* 42px */
+/*    margin: 0 .475rem; /* 14px/2 */
+    margin: 0 calc(1.94 / 143 * (100vw - 2rem) - 2.9px);
+}
+
+.logos li:first-of-type, .logos li:nth-of-type(4) {
+    margin-left: 0;
+}
+
+.logos li:last-of-type, .logos li:nth-of-type(3) {
+    margin-right: 0;
 }
 
 #all > div {
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
-    margin-right: 2rem;
     margin-top: 5.125rem; /* 82px */
 }
 
-#all > div > div {
+#all > div, #all > .logos {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#all > div > div, footer > div {
     width: 100%;
+    max-width: 37.0625rem; /* 593px */
+    margin: auto;
+}
+
+#all > .logos {
+    width: calc(100% - 2rem);
     max-width: 37.0625rem; /* 593px */
     margin: auto;
 }
@@ -142,15 +162,11 @@ main li {
     margin-bottom: 1.25rem; /* 20px */
 }
 
-#all > .logos {
-max-width: 37.0625rem; /* 593px */;
-}
-
 form {
     padding: 2.375rem 3rem 4.75rem 3rem; /* 38px 48px 76px 48px */
     background: #F8F9F9;
     width: 100%;
-        margin: auto;
+    margin: 0 auto 5rem auto;
     max-width: 28.9375rem; /* 463px */
 }
 
@@ -184,7 +200,6 @@ select {
     color: #68737D;
     padding-left: 1.03125rem; /* 16.5px */
     padding-right: 1.03125rem;
-/*    font-size: 1rem; */
 }
 
 input:not([type="submit"]), select {
@@ -200,17 +215,66 @@ input[type="submit"] {
     font-weight: 600;
 }
 
-@media (min-width: 576px) { 
+footer {
+    margin-top: 5.8125rem; /* 93px */
+    background-color: #f8faf9; /* obteined from the image in the mockup */
+    color: #405457;
+    padding-bottom: 3.875rem; /* 62px */
+}
 
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e5e8;
+}
+
+.social li{
+	display: inline-block;
+	width: 51px; 
+	height: 51px;
+	margin: 6px 4px;
+}
+.social li a{ 
+    background-image: url('../img/sprite.jpg');
+    background-repeat: no-repeat; 
+	display: inline-block; 
+	width: 51px; 
+	height: 51px; 
+	overflow: hidden; 
+    color: transparent;
+    background-position-y: 0;
+}
+
+@media (min-width: 420px) { 
+    .logos li {
+        margin: 0 6%;
+    }
+}
+
+@media (min-width: 568px) { 
+    .logos li {
+        margin: 0 8%;
+    }
+}
+
+@media (min-width: 625px) { 
+    .logos li {
+        margin: 0;
+    }
 }
 
 @media (min-width: 1200px) { 
+    .logos li {
+        margin: 0 .475rem; /* 14px/2 */
+    }
     #all > div {
         flex-direction: row;
         max-width: 1129px;
         margin-left: auto;
         margin-right: auto;
     }
+
     #all > div > div {
         margin: 0;
     }
@@ -221,6 +285,11 @@ input[type="submit"] {
 
     aside {
         padding-left: 4.5625rem; /* 73px */
+    }
+
+    #all > .logos {
+        margin-left: calc((100vw - 1129px)/2);
+        margin-top: 3rem;
     }
 
     form {

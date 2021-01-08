@@ -37,7 +37,8 @@ Vue.component('logos', {
     },
     template: `
 <ul class="logos">
-  <li v-for="item in companies" :style="{ backgroundImage: 'url(img/companies/' + item.img + ')', width:item.width + 'px' }">
+  <li v-for="item in companies" 
+    :style="{ backgroundImage: 'url(img/companies/' + item.img + ')', width:item.width + 'px' }">
     {{ item.title }}
   </li>
 </ul>
