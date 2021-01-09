@@ -124,7 +124,7 @@ main ul {
     margin: 2.5rem 0;
 }
 
-main li {
+main li, form li {
     list-style: none;
 }
 
@@ -263,7 +263,7 @@ footer > div {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(105, 105, 105, .8); /* #696969 80% */
   display: table;
   transition: opacity .3s ease;
 }
@@ -274,9 +274,9 @@ footer > div {
 }
 
 .modal-container {
-    width: 642px;
+    width: 90%;
     margin: 0px auto;
-    padding: 20px 30px;
+    padding: 20px 20px;
     background-color: #fff;
     border-radius: 2px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
@@ -284,7 +284,7 @@ footer > div {
 }
 
 .modal-container > div {
-    padding: 97px 88px 119px 88px;
+    padding: 2.5rem .75rem;
 }
 
 .modal-container p {
@@ -304,10 +304,16 @@ footer > div {
     font-weight: 500;
     font-size: 1.125rem; /* 18px */
     text-align: center;
+    color: #021700;
+    line-height: 2.4375rem; /* 39px */
 }
 
 .modal-default-button {
     float: right;
+    font-size: 1.25rem; /* 20px */
+    color: #000000;
+    border: none;
+    background: none;
 }
 
 .modal-enter {
@@ -334,6 +340,14 @@ footer > div {
     .logos li {
         margin: 0 8%;
     }
+
+    .modal-container {
+        width: 75%;
+    }
+
+    .modal-container > div {
+        padding: 4rem 2rem;
+    }
 }
 
 @media (min-width: 625px) { 
@@ -343,6 +357,10 @@ footer > div {
     }
     .logos li {
         margin: 0;
+    }
+
+    .modal-container {
+        width: 60%;
     }
 
     footer > div {
@@ -386,5 +404,13 @@ footer > div {
 
     form {
         margin: auto;
+    }
+
+    .modal-container {
+        width: 642px;
+    }
+
+    .modal-container > div {
+        padding: 117px 88px 119px 88px;
     }
 }

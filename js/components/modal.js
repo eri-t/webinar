@@ -13,7 +13,7 @@ Vue.component('modal', {
                 @click="$emit('close')"
                 aria-label="Cerrar"
             >
-                x
+                &#x2715
             </button>
 
             <div>
