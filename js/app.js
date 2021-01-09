@@ -52,7 +52,6 @@ var app = new Vue({
 				name: 'nombre',
 				n: 5
 			},
-
-		]
+		],
 	},
 })
