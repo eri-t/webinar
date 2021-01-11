@@ -29,28 +29,22 @@ var app = new Vue({
 		],
 		social: [
 			{
-				name: 'twitter',
-				n: 0
+				name: 'twitter'
 			},
 			{
-				name: 'facebook',
-				n: 1
+				name: 'facebook'
 			},
 			{
-				name: 'linkedin',
-				n: 2
+				name: 'linkedin'
 			},
 			{
-				name: 'youtube',
-				n: 3
+				name: 'youtube'
 			},
 			{
-				name: 'instagram',
-				n: 4
+				name: 'instagram'
 			},
 			{
-				name: 'snapchat',
-				n: 5
+				name: 'snapchat'
 			},
 		],
 	},

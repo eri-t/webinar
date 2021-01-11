@@ -63,8 +63,8 @@
                     <p>© 2020</p>
                 </div>
                 <ul class="social">
-                    <li v-for="item in social">
-                        <social :name="item.name" :position="item.n"></social>
+                    <li v-for="(item, i) in social">
+                        <social :name="item.name" :position="i"></social>
                     </li>
                 </ul>
             </div>
