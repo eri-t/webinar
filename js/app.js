@@ -49,7 +49,7 @@ var app = new Vue({
 				n: 4
 			},
 			{
-				name: 'nombre',
+				name: 'snapchat',
 				n: 5
 			},
 		],
