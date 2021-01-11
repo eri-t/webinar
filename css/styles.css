@@ -197,12 +197,12 @@ input, select {
 
 select {
     color: #68737D;
-    padding-left: 1.03125rem; /* 16.5px */
-    padding-right: 1.03125rem;
 }
 
 input:not([type="submit"]), select {
     border: 1px solid #68737D;
+    padding-left: 1.03125rem; /* 16.5px */
+    padding-right: 1.03125rem;
 }
 
 input[type="submit"] {
